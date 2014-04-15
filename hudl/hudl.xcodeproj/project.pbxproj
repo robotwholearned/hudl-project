@@ -39,6 +39,7 @@
 		F0C87C7418FD8BF700AF3A5E /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C87C6118FD8BF700AF3A5E /* UIProgressView+AFNetworking.m */; };
 		F0C87C7518FD8BF700AF3A5E /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C87C6318FD8BF700AF3A5E /* UIRefreshControl+AFNetworking.m */; };
 		F0C87C7618FD8BF700AF3A5E /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C87C6518FD8BF700AF3A5E /* UIWebView+AFNetworking.m */; };
+		F0F4406A18FDE14E00639912 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F4406918FDE14E00639912 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		F0C87C6318FD8BF700AF3A5E /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		F0C87C6418FD8BF700AF3A5E /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		F0C87C6518FD8BF700AF3A5E /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		F0F4406918FDE14E00639912 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C87C0B18FD8B4600AF3A5E /* CoreGraphics.framework in Frameworks */,
-				F0C87C0D18FD8B4600AF3A5E /* UIKit.framework in Frameworks */,
 				F0C87C0918FD8B4600AF3A5E /* Foundation.framework in Frameworks */,
+				F0F4406A18FDE14E00639912 /* Social.framework in Frameworks */,
+				F0C87C0D18FD8B4600AF3A5E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +159,7 @@
 		F0C87C0718FD8B4600AF3A5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0F4406918FDE14E00639912 /* Social.framework */,
 				F0C87C0818FD8B4600AF3A5E /* Foundation.framework */,
 				F0C87C0A18FD8B4600AF3A5E /* CoreGraphics.framework */,
 				F0C87C0C18FD8B4600AF3A5E /* UIKit.framework */,
@@ -592,6 +596,7 @@
 				F0C87C3C18FD8B4600AF3A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0C87C3D18FD8B4600AF3A5E /* Build configuration list for PBXNativeTarget "hudlTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +605,7 @@
 				F0C87C3F18FD8B4600AF3A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
