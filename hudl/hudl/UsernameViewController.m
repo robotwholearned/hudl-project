@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    usernameTextfield.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,22 +39,44 @@
 - (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
     ProfileViewController* profileViewController = [segue destinationViewController];
-    if ([segue.identifier isEqualToString:@"showInfo"]) {
-        if ([usernameTextfield.text isEqualToString:@""]) {
-            profileViewController.username = @"robotwholearned";
-            [[[UIAlertView alloc] initWithTitle:@"Oh Boy"
-                                        message:@"Next time try typing in a twitter handle, you can use mine for now :)"
-                                       delegate:self
-                              cancelButtonTitle:@"Okay!"
-                              otherButtonTitles:nil] show];
-        } else {
-            profileViewController.username = usernameTextfield.text;
-        }
+
+    if ([usernameTextfield.text isEqualToString:@""]) {
+        profileViewController.username = @"robotwholearned";
+        [[[UIAlertView alloc] initWithTitle:@"Oh Boy"
+                                    message:@"Next time try typing in a twitter handle, you can use mine for now :)"
+                                   delegate:self
+                          cancelButtonTitle:@"Okay!"
+                          otherButtonTitles:nil] show];
     } else {
-        profileViewController.username = [segue identifier];
+        profileViewController.username = usernameTextfield.text;
     }
 
     //[profileViewController setUsername:usernameTextfield.text];
+}
+- (BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+    return YES;
+}
+- (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
+{
+    NSLog(@"touchesBegan:withEvent:");
+    [self.view endEditing:YES];
+    [super touchesBegan:touches
+              withEvent:event];
+}
+- (BOOL)textFieldShouldBeginEditing:(UITextField*)textField
+{
+    NSLog(@"textFieldShouldBeginEditing");
+    textField.backgroundColor = [UIColor colorWithRed:220.0f / 255.0f
+                                                green:220.0f / 255.0f
+                                                 blue:220.0f / 255.0f
+                                                alpha:1.0f];
+    return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField*)textField
+{
+    NSLog(@"textFieldDidBeginEditing");
 }
 /*
 #pragma mark - Navigation

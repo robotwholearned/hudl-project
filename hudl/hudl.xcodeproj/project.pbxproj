@@ -195,13 +195,13 @@
 				F0C87C1A18FD8B4600AF3A5E /* Main_iPhone.storyboard */,
 				F0C87C1D18FD8B4600AF3A5E /* Main_iPad.storyboard */,
 				F0C87C2018FD8B4600AF3A5E /* ViewController.h */,
+				F0C87C2118FD8B4600AF3A5E /* ViewController.m */,
 				532E616B1900C4710051CF89 /* UsernameViewController.h */,
 				532E616C1900C4710051CF89 /* UsernameViewController.m */,
 				532E616E1900C5520051CF89 /* ProfileViewController.h */,
 				532E616F1900C5520051CF89 /* ProfileViewController.m */,
 				5352EE1A19018F470049731D /* TwitterAccount.h */,
 				5352EE1B19018F470049731D /* TwitterAccount.m */,
-				F0C87C2118FD8B4600AF3A5E /* ViewController.m */,
 				F0C87C2318FD8B4600AF3A5E /* Images.xcassets */,
 				F0C87C0F18FD8B4600AF3A5E /* Supporting Files */,
 			);
@@ -549,8 +549,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudl/hudl-Prefix.pch";
 				INFOPLIST_FILE = "hudl/hudl-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -564,8 +565,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudl/hudl-Prefix.pch";
 				INFOPLIST_FILE = "hudl/hudl-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ProfileViewController.h"
 
-@interface UsernameViewController : ViewController {
+@interface UsernameViewController : ViewController <UITextFieldDelegate> {
     IBOutlet UITextField* usernameTextfield;
 }
 
