@@ -8,6 +8,8 @@
 
 #import "ProfileViewController.h"
 #import "TwitterAccount.h"
+#import "MBProgressHUD.h"
+
 @interface ProfileViewController () {
     TwitterAccount* requestedUserAccount;
 }
@@ -28,6 +30,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    MBProgressHUD* hud = [MBProgressHUD showHUDAddedTo:self.view
+                                              animated:YES];
+    hud.labelText = @"gathering information";
     requestedUserAccount = [[TwitterAccount alloc] initWithUsername:self.username];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(twitterAccountPopulated:)
@@ -54,6 +59,8 @@
     lastTweetTextView.text = requestedUserAccount.lastTweet;
     profileImageView.image = requestedUserAccount.profileImage;
     bannerImageView.image = requestedUserAccount.bannerImage;
+    [MBProgressHUD hideHUDForView:self.view
+                         animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

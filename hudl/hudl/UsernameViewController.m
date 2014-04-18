@@ -53,10 +53,6 @@
 
     //[profileViewController setUsername:usernameTextfield.text];
 }
-- (BOOL)textFieldShouldReturn:(UITextField*)textField
-{
-    return YES;
-}
 - (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
     NSLog(@"touchesBegan:withEvent:");
@@ -73,10 +69,16 @@
                                                 alpha:1.0f];
     return YES;
 }
-
-- (void)textFieldDidBeginEditing:(UITextField*)textField
+- (BOOL)textFieldShouldEndEditing:(UITextField*)textField
 {
-    NSLog(@"textFieldDidBeginEditing");
+    NSLog(@"textFieldShouldEndEditing");
+    textField.backgroundColor = [UIColor whiteColor];
+    return YES;
+}
+- (BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 /*
 #pragma mark - Navigation

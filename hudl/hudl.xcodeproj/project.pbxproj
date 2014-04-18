@@ -10,6 +10,7 @@
 		532E616D1900C4710051CF89 /* UsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532E616C1900C4710051CF89 /* UsernameViewController.m */; };
 		532E61701900C5520051CF89 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532E616F1900C5520051CF89 /* ProfileViewController.m */; };
 		5352EE1C19018F470049731D /* TwitterAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5352EE1B19018F470049731D /* TwitterAccount.m */; };
+		53700CC61901EB3900410744 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 53700CC51901EB3900410744 /* MBProgressHUD.m */; };
 		F0757DC618FEDF4500CD022A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0757DC518FEDF4500CD022A /* Accounts.framework */; };
 		F0757DC818FEDF5100CD022A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0757DC718FEDF5100CD022A /* QuartzCore.framework */; };
 		F0C87C0918FD8B4600AF3A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C87C0818FD8B4600AF3A5E /* Foundation.framework */; };
@@ -64,6 +65,8 @@
 		532E616F1900C5520051CF89 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		5352EE1A19018F470049731D /* TwitterAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAccount.h; sourceTree = "<group>"; };
 		5352EE1B19018F470049731D /* TwitterAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAccount.m; sourceTree = "<group>"; };
+		53700CC41901EB3900410744 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		53700CC51901EB3900410744 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F0757DC518FEDF4500CD022A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F0757DC718FEDF5100CD022A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F0C87C0518FD8B4600AF3A5E /* hudl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hudl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +155,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53700CC31901EB2500410744 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				53700CC41901EB3900410744 /* MBProgressHUD.h */,
+				53700CC51901EB3900410744 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		F0C87BFC18FD8B4600AF3A5E = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +200,7 @@
 		F0C87C0E18FD8B4600AF3A5E /* hudl */ = {
 			isa = PBXGroup;
 			children = (
+				53700CC31901EB2500410744 /* MBProgressHUD */,
 				F0C87C4018FD8BF700AF3A5E /* AFNetworking */,
 				F0C87C5418FD8BF700AF3A5E /* UIKit+AFNetworking */,
 				F0C87C1718FD8B4600AF3A5E /* AppDelegate.h */,
@@ -395,6 +408,7 @@
 				F0C87C2218FD8B4600AF3A5E /* ViewController.m in Sources */,
 				F0C87C6718FD8BF700AF3A5E /* AFHTTPRequestOperationManager.m in Sources */,
 				F0C87C7418FD8BF700AF3A5E /* UIProgressView+AFNetworking.m in Sources */,
+				53700CC61901EB3900410744 /* MBProgressHUD.m in Sources */,
 				F0C87C6918FD8BF700AF3A5E /* AFNetworkReachabilityManager.m in Sources */,
 				F0C87C6D18FD8BF700AF3A5E /* AFURLResponseSerialization.m in Sources */,
 				532E61701900C5520051CF89 /* ProfileViewController.m in Sources */,
@@ -549,9 +563,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudl/hudl-Prefix.pch";
 				INFOPLIST_FILE = "hudl/hudl-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -565,9 +579,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudl/hudl-Prefix.pch";
 				INFOPLIST_FILE = "hudl/hudl-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
