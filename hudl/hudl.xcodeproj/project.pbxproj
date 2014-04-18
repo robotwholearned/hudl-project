@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532E616D1900C4710051CF89 /* UsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532E616C1900C4710051CF89 /* UsernameViewController.m */; };
+		532E61701900C5520051CF89 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532E616F1900C5520051CF89 /* ProfileViewController.m */; };
+		5352EE1C19018F470049731D /* TwitterAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5352EE1B19018F470049731D /* TwitterAccount.m */; };
 		F0757DC618FEDF4500CD022A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0757DC518FEDF4500CD022A /* Accounts.framework */; };
 		F0757DC818FEDF5100CD022A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0757DC718FEDF5100CD022A /* QuartzCore.framework */; };
 		F0C87C0918FD8B4600AF3A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C87C0818FD8B4600AF3A5E /* Foundation.framework */; };
@@ -55,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		532E616B1900C4710051CF89 /* UsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsernameViewController.h; sourceTree = "<group>"; };
+		532E616C1900C4710051CF89 /* UsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsernameViewController.m; sourceTree = "<group>"; };
+		532E616E1900C5520051CF89 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		532E616F1900C5520051CF89 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		5352EE1A19018F470049731D /* TwitterAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAccount.h; sourceTree = "<group>"; };
+		5352EE1B19018F470049731D /* TwitterAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAccount.m; sourceTree = "<group>"; };
 		F0757DC518FEDF4500CD022A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F0757DC718FEDF5100CD022A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F0C87C0518FD8B4600AF3A5E /* hudl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hudl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +195,12 @@
 				F0C87C1A18FD8B4600AF3A5E /* Main_iPhone.storyboard */,
 				F0C87C1D18FD8B4600AF3A5E /* Main_iPad.storyboard */,
 				F0C87C2018FD8B4600AF3A5E /* ViewController.h */,
+				532E616B1900C4710051CF89 /* UsernameViewController.h */,
+				532E616C1900C4710051CF89 /* UsernameViewController.m */,
+				532E616E1900C5520051CF89 /* ProfileViewController.h */,
+				532E616F1900C5520051CF89 /* ProfileViewController.m */,
+				5352EE1A19018F470049731D /* TwitterAccount.h */,
+				5352EE1B19018F470049731D /* TwitterAccount.m */,
 				F0C87C2118FD8B4600AF3A5E /* ViewController.m */,
 				F0C87C2318FD8B4600AF3A5E /* Images.xcassets */,
 				F0C87C0F18FD8B4600AF3A5E /* Supporting Files */,
@@ -319,6 +334,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = self.edu.robotwholearned;
 				TargetAttributes = {
+					F0C87C0418FD8B4600AF3A5E = {
+						DevelopmentTeam = M5SD2YQ3QM;
+					};
 					F0C87C2818FD8B4600AF3A5E = {
 						TestTargetID = F0C87C0418FD8B4600AF3A5E;
 					};
@@ -371,12 +389,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C87C6618FD8BF700AF3A5E /* AFHTTPRequestOperation.m in Sources */,
+				5352EE1C19018F470049731D /* TwitterAccount.m in Sources */,
+				532E616D1900C4710051CF89 /* UsernameViewController.m in Sources */,
 				F0C87C7318FD8BF700AF3A5E /* UIImageView+AFNetworking.m in Sources */,
 				F0C87C2218FD8B4600AF3A5E /* ViewController.m in Sources */,
 				F0C87C6718FD8BF700AF3A5E /* AFHTTPRequestOperationManager.m in Sources */,
 				F0C87C7418FD8BF700AF3A5E /* UIProgressView+AFNetworking.m in Sources */,
 				F0C87C6918FD8BF700AF3A5E /* AFNetworkReachabilityManager.m in Sources */,
 				F0C87C6D18FD8BF700AF3A5E /* AFURLResponseSerialization.m in Sources */,
+				532E61701900C5520051CF89 /* ProfileViewController.m in Sources */,
 				F0C87C6B18FD8BF700AF3A5E /* AFURLConnectionOperation.m in Sources */,
 				F0C87C7218FD8BF700AF3A5E /* UIButton+AFNetworking.m in Sources */,
 				F0C87C7018FD8BF700AF3A5E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -524,9 +545,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudl/hudl-Prefix.pch";
 				INFOPLIST_FILE = "hudl/hudl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -537,9 +560,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudl/hudl-Prefix.pch";
 				INFOPLIST_FILE = "hudl/hudl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
