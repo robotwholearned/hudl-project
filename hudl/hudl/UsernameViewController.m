@@ -55,14 +55,12 @@
 }
 - (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
-    NSLog(@"touchesBegan:withEvent:");
     [self.view endEditing:YES];
     [super touchesBegan:touches
               withEvent:event];
 }
 - (BOOL)textFieldShouldBeginEditing:(UITextField*)textField
 {
-    NSLog(@"textFieldShouldBeginEditing");
     textField.backgroundColor = [UIColor colorWithRed:220.0f / 255.0f
                                                 green:220.0f / 255.0f
                                                  blue:220.0f / 255.0f
@@ -71,7 +69,6 @@
 }
 - (BOOL)textFieldShouldEndEditing:(UITextField*)textField
 {
-    NSLog(@"textFieldShouldEndEditing");
     textField.backgroundColor = [UIColor whiteColor];
     return YES;
 }

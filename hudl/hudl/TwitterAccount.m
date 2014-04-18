@@ -79,9 +79,9 @@
                                                                self.twitterHandle = [(NSDictionary *)TWData objectForKey:@"screen_name"];
                                                                self.fullName = [(NSDictionary *)TWData objectForKey:@"name"];
                                                                
-                                                               self.followers = [[(NSDictionary *)TWData objectForKey:@"followers_count"] integerValue];
-                                                               self.following = [[(NSDictionary *)TWData objectForKey:@"friends_count"] integerValue];
-                                                               self.tweets = [[(NSDictionary *)TWData objectForKey:@"statuses_count"] integerValue];
+                                                               self.followers = (int)[[(NSDictionary *)TWData objectForKey:@"followers_count"] integerValue];
+                                                               self.following = (int)[[(NSDictionary *)TWData objectForKey:@"friends_count"] integerValue];
+                                                               self.tweets = (int)[[(NSDictionary *)TWData objectForKey:@"statuses_count"] integerValue];
                                                                
                                                                self.lastTweet = [[(NSDictionary*)TWData objectForKey:@"status"] objectForKey:@"text"];
                                                                
